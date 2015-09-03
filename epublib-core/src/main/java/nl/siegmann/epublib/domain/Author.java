@@ -42,7 +42,22 @@ public class Author implements Serializable {
 	}
 	
 	public String toString() {
-		return lastname + ", " + firstname;
+		if(StringUtil.isNotBlank(lastname) && StringUtil.isNotBlank(firstname))
+		{
+			return lastname + ", " + firstname;
+		}
+		
+		if(StringUtil.isNotBlank(lastname))
+		{
+			return lastname;
+		}
+		
+		if(StringUtil.isNotBlank(firstname))
+		{
+			return firstname;
+		}
+		
+		return "";
 	}
 	
 	public int hashCode() {
