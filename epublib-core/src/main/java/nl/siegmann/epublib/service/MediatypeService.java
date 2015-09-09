@@ -14,7 +14,7 @@ import nl.siegmann.epublib.util.StringUtil;
  *
  */
 public class MediatypeService {
-
+	public static final MediaType XML = new MediaType("application/xml", ".xml");
 	public static final MediaType XHTML = new MediaType("application/xhtml+xml", ".xhtml", new String[] {".htm", ".html", ".xhtml"});
 	public static final MediaType EPUB = new MediaType("application/epub+zip", ".epub");
 	public static final MediaType NCX = new MediaType("application/x-dtbncx+xml", ".ncx");
@@ -44,7 +44,7 @@ public class MediatypeService {
 	public static final MediaType PLS = new MediaType("application/pls+xml", ".pls");
 	
 	public static MediaType[] mediatypes = new MediaType[] {
-		XHTML, EPUB, JPG, PNG, GIF, CSS, SVG, TTF, NCX, XPGT, OPENTYPE, WOFF, SMIL, PLS, JAVASCRIPT, MP3, MP4, OGG
+		XHTML, EPUB, JPG, PNG, GIF, CSS, SVG, TTF, NCX, XPGT, OPENTYPE, WOFF, SMIL, PLS, JAVASCRIPT, MP3, MP4, OGG, XML
 	};
 	
 	public static Map<String, MediaType> mediaTypesByName = new HashMap<String, MediaType>();
