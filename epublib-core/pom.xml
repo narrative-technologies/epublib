@@ -5,7 +5,6 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>nl.siegmann.epublib</groupId>
 	<artifactId>epublib-core</artifactId>
 	<name>epublib-core</name>
 	<description>A java library for reading/writing/manipulating epub files</description>
@@ -15,7 +14,7 @@
 	<parent>
     	<groupId>nl.siegmann.epublib</groupId>
 		<artifactId>epublib-parent</artifactId>
-		<version>3.1.1</version>
+		<version>3.1.2</version>
 		<relativePath>../epublib-parent/pom.xml</relativePath>
   	</parent>
 

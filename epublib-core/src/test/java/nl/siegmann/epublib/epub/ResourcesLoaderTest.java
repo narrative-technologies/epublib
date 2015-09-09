@@ -115,7 +115,7 @@ public class ResourcesLoaderTest {
 		
 		// then
 		verifyResources(resources);
-		Assert.assertEquals(Resource.class, resources.getById("container").getClass());
+		Assert.assertEquals(LazyResource.class, resources.getById("container").getClass());
 		Assert.assertEquals(LazyResource.class, resources.getById("book1").getClass());
 	}
 
@@ -153,7 +153,7 @@ public class ResourcesLoaderTest {
 		resource = resources.getByHref(allHrefs.get(0));
 		Assert.assertEquals("container", resource.getId());
 		Assert.assertEquals("META-INF/container.xml", resource.getHref());
-		Assert.assertNull(resource.getMediaType());
+		Assert.assertNotNull(resource.getMediaType());
 		Assert.assertEquals(230, resource.getData().length);
 		
 		// book1.css
